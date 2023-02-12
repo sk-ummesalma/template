@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        <b>FACTORIAL</b>
+       
+    </title>
+     
+    <script>  
+        function fact(){  
+        var i, num, f;  
+        f = 1;  
+        num = document.getElementById("num").value;  
+        for(i = 1; i <= num; i++)    
+        {  
+        ff = f * i;  
+        }  
+        ii = i - 1;    
+        document.getElementById("res").innerHTML = "The factorial of the number " + i + " is: " + f ;  
+        }  
+        </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>Factorial check</h1>
+         
+        <h4>Factorial or not</h4>
+         
+        
+         
+        <form name="myform">
+            Enter the number:
+            <input type="text" name=n value="">
+             
+            <br><br>
+             
+            <input type="button" value="Check" onClick="p()" 
+                 style="background-color:#FCF5D8;">
+                
+            <br>
+        </form>
+    </center>
+</body>
+ 
+</html>
