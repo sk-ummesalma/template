@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        <b>Check a number is Prime or not</b>
+       
+    </title>
+     
+    <script type="text/javascript">
+         
+        function check(p){
+                for(let i = 3; i <= Math.sqrt(p); i+=2)
+                if (p % i === 0) {
+                    return true ;
+                }
+            return false;
+            }
+     
+        function p() {
+             
+            var n;
+            n = document.myform.n.value;
+            n = parseInt(n)
+            if( n % 2 === 0 )
+                alert(n + " is not prime");
+            else if(check(n))
+                alert(n + " is not prime");
+            else
+                alert(n + " is prime");
+             
+        }
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>prime number check</h1>
+         
+        <h4>check number is prime or not</h4>
+         
+        
+         
+        <form name="myform">
+            Enter the number:
+            <input type="text" name=n value="">
+             
+            <br><br>
+             
+            <input type="button" value="Check" onClick="p()" 
+                 style="background-color:#FCF5D8;">
+                
+            <br>
+        </form>
+    </center>
+</body>
+ 
+</html>
