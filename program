@@ -1,9 +1,0 @@
-a = 'determination'
-b = 'hardwork'
-c = a+b 
-if c == a+b:
-    print ('success')
-else:
-    print('failure')    
-
- 
